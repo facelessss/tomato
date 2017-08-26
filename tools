@@ -1,0 +1,27 @@
+import time
+import sys
+import json
+
+class Tools:
+	sound_name = 'dida.wav'
+	def remind_sound(self):
+		if sys.platform[:5] == 'linux2' or sys.platform == 'darwin':
+			import os
+			os.popen(sound_name)
+		else:
+			import winsound
+			winsound.PlaySound(sound_name , winsound.SND_FILENAME)
+
+	def time_reminder(self , mins):
+		now = 0
+		while(now < mins):
+			time.sleep(60)
+			now = now + 1
+		return true
+
+	def check(self , name , password):
+		return true
+
+	def record(self , name):
+
+	def get_record(self , dat , exc = 'all'):
